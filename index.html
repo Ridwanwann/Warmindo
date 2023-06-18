@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MuhammadRidwan-2212018</title>
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header class="header">
+      <section class="flex">
+        <a href="#home" class="logo">Warmindo.</a>
+
+        <nav class="navbar">
+          <a href="#home">home</a>
+          <a href="#about">tentang</a>
+          <a href="#menu">menu</a>
+          <a href="#order">pesan</a>
+          <a href="#faq">faq</a>
+        </nav>
+
+        <div class="icons">
+          <div id="menu-btn" class="fas fa-bars"></div>
+          <div id="user-btn" class="fas fa-user"></div>
+          <div id="order-btn" class="fas fa-box"></div>
+          <div id="cart-btn" class="fas fa-shopping-cart"><span>(4)</span></div>
+        </div>
+      </section>
+    </header>
+
+    <!-- header section ends -->
+
+    <div class="user-account">
+      <section>
+        <div id="close-account"><span>tutup</span></div>
+
+        <div class="user">
+          <p><span>Anda belum masuk sekarang!</span></p>
+        </div>
+
+        <div class="display-orders">
+          <p>pizza-1 <span>( 20K x 2 )</span></p>
+          <p>pizza 03 <span>( 20K x 1 )</span></p>
+          <p>pizza 06 <span>( 20K x 4 )</span></p>
+          <p>pizza 07 <span>( 20K- x 1 )</span></p>
+        </div>
+
+        <div class="flex">
+          <form action="" method="post">
+            <h3>Masuk sekarang</h3>
+            <input
+              type="email"
+              name="email"
+              required
+              class="box"
+              placeholder="Masukkan email Anda"
+              maxlength="50"
+            />
+            <input
+              type="password"
+              name="pass"
+              required
+              class="box"
+              placeholder="masukkan kata sandi Anda"
+              maxlength="20"
+            />
+            <input
+              type="submit"
+              value="Masuk sekarang"
+              name="login"
+              class="btn"
+            />
+          </form>
+
+          <form action="" method="post">
+            <h3>Daftar sekarang</h3>
+            <input
+              type="text"
+              name="name"
+              required
+              class="box"
+              placeholder="masukkan nama pengguna Anda"
+              maxlength="20"
+            />
+            <input
+              type="email"
+              name="email"
+              required
+              class="box"
+              placeholder="Masukkan email Anda"
+              maxlength="50"
+            />
+            <input
+              type="password"
+              name="pass"
+              required
+              class="box"
+              placeholder="emasukkan kata sandi Anda"
+              maxlength="20"
+            />
+            <input
+              type="password"
+              name="cpass"
+              required
+              class="box"
+              placeholder="konfirmasi password Anda"
+              maxlength="20"
+            />
+            <input
+              type="submit"
+              value="Daftar sekarang"
+              name="register"
+              class="btn"
+            />
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <div class="my-orders">
+      <section>
+        <div id="close-orders"><span>tutup</span></div>
+
+        <h3 class="title">pesanan saya</h3>
+
+        <div class="box">
+          <p>ditempatkan pada : <span>03/06/2023</span></p>
+          <p>nama : <span>Muhammad Ridwan</span></p>
+          <p>nomor : <span>0895636854708</span></p>
+          <p>
+            alamat :
+            <span
+              >Jl.Handil Sulawesi, Gn.Tembak, RT.45, No.24, Kel.Teritip, Balikpapan
+              Timur</span
+            >
+          </p>
+          <p>metode pembayaran : <span>cash on delivery</span></p>
+          <p>
+            total pesanan :
+            <span
+              >pizza 01 20K x 2, pizza 03 20K x 1, pizza 06 20K x 4, pizza
+              07 20K x 1</span
+            >
+          </p>
+          <p>total harga : <span>160K</span></p>
+          <p>
+            status pembayaran : <span style="color: var(--red)">pending</span>
+          </p>
+        </div>
+
+        <div class="box">
+         <p>ditempatkan pada : <span>03/06/2023</span></p>
+         <p>nama : <span>Muhammad Ridwan</span></p>
+         <p>nomor : <span>0895636854708</span></p>
+         <p>
+           alamat :
+           <span
+             >Jl.Handil Sulawesi, Gn.Tembak, RT.45, No.24, Kel.Teritip, Balikpapan
+             Timur</span
+           >
+         </p>
+         <p>metode pembayaran : <span>cash on delivery</span></p>
+         <p>
+           total pesanan :
+           <span
+             >pizza 01 20K x 2, pizza 03 20K x 1, pizza 06 20K x 4, pizza
+             07 20K x 1</span
+           >
+         </p>
+         <p>total harga : <span>160K</span></p>
+         <p>
+           status pembayaran : <span style="color: var(--red)">pending</span>
+         </p>
+         </div>
+      </section>
+    </div>
+
+    <div class="shopping-cart">
+      <section>
+        <div id="close-cart"><span>tutup</span></div>
+
+        <div class="box">
+          <a href="#" class="fas fa-times"></a>
+          <img src="images/miegoreng-original.png" alt="" />
+          <div class="content">
+            <p>Mie goreng original <span>( 15K x 2 )</span></p>
+            <form action="" method="post">
+              <input
+                type="number"
+                class="qty"
+                name="qty"
+                min="1"
+                value="2"
+                max="100"
+              />
+              <button
+                type="submit"
+                class="fas fa-edit"
+                name="update_qty"
+              ></button>
+            </form>
+          </div>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-times"></a>
+          <img src="images/miekuah-original.png" alt="" />
+          <div class="content">
+            <p>Mie kuah original <span>( 15K x 1 )</span></p>
+            <form action="" method="post">
+              <input
+                type="number"
+                class="qty"
+                name="qty"
+                min="1"
+                value="1"
+                max="100"
+              />
+              <button
+                type="submit"
+                class="fas fa-edit"
+                name="update_qty"
+              ></button>
+            </form>
+          </div>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-times"></a>
+          <img src="images/teh.png" alt="" />
+          <div class="content">
+            <p>Teh es <span>( 5K x 2 )</span></p>
+            <form action="" method="post">
+              <input
+                type="number"
+                class="qty"
+                name="qty"
+                min="1"
+                value="2"
+                max="100"
+              />
+              <button
+                type="submit"
+                class="fas fa-edit"
+                name="update_qty"
+              ></button>
+            </form>
+          </div>
+        </div>
+
+        <a href="#order" class="btn">pesan sekarang</a>
+      </section>
+    </div>
+
+    <div class="home-bg">
+      <section class="home" id="home">
+        <div class="slide-container">
+          <div class="slide active">
+            <div class="image">
+              <img src="images/miegoreng-original.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>Mie goreng original</h3>
+              <div class="fas fa-angle-left" onclick="prev()"></div>
+              <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="image">
+              <img src="images/miekuah-original.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>Mie kuah original</h3>
+              <div class="fas fa-angle-left" onclick="prev()"></div>
+              <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="image">
+              <img src="images/mienyemek-pedas.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>Mie nyemek pedas</h3>
+              <div class="fas fa-angle-left" onclick="prev()"></div>
+              <div class="fas fa-angle-right" onclick="next()"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+      <h1 class="heading">tentang kami</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="images/cook.jpeg" alt="" />
+          <h3>tentang Warmindo</h3>
+          <p>
+            Warung Mie Indo atau biasa di singkat Warmindo adalah Warung makan mie yang menawarkan beragam variasi mie yang menggoda selera, mulai dari mie goreng yang renyah dan lezat hingga mie kuah yang gurih dan hangat. Setiap hidangan mie kami disajikan dengan porsi yang melimpah, sehingga Anda dapat menikmati makanan yang memuaskan dan mengenyangkan.
+          </p>
+          <a href="#menu" class="btn">menu kami</a>
+        </div>
+
+        <div class="box">
+          <img src="images/delivery.jpeg" alt="" />
+          <h3>30 menit pengantaran</h3>
+          <p>
+            Nikmati kemudahan dan kecepatan dalam menikmati hidangan favorit Anda dengan layanan pesan antar makanan kami yang cepat. Kami memahami bahwa waktu Anda berharga, itulah sebabnya kami siap mengantarkan makanan lezat langsung ke pintu rumah atau kantor Anda dengan cepat dan efisien.
+          </p>
+          <a href="#menu" class="btn">menu kami</a>
+        </div>
+
+        <div class="box">
+          <img src="images/share.jpeg" alt="" />
+          <h3>bagikan dengan keluarga</h3>
+          <p>
+            Mari bersama-sama membuat momen makan yang istimewa dan berbagi kelezatan dengan semua orang. Pesan makanan dari warung kami dan sebarkan kepuasan makanan kepada keluarga, teman, dan orang-orang terkasih Anda. Jadikan setiap hidangan sebagai kesempatan untuk menghadirkan senyuman dan kenangan indah dalam hidup kita.
+          </p>
+          <a href="#menu" class="btn">menu kami</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- menu section starts  -->
+
+    <section id="menu" class="menu">
+      <h1 class="heading">menu kami</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <div class="price"><span>15</span>K</div>
+          <img src="images/miegoreng-original.png" alt="" />
+          <div class="name">Mie goreng original</div>
+          <form action="" method="post">
+            <input
+              type="number"
+              min="1"
+              max="100"
+              value="1"
+              class="qty"
+              name="qty"
+            />
+            <input
+              type="submit"
+              value="taruh keranjang"
+              name="add_to_cart"
+              class="btn"
+            />
+          </form>
+        </div>
+
+        <div class="box">
+          <div class="price"><span>15</span>K</div>
+          <img src="images/miekuah-original.png" alt="" />
+          <div class="name">Mie kuah original</div>
+          <form action="" method="post">
+            <input
+              type="number"
+              min="1"
+              max="100"
+              value="1"
+              class="qty"
+              name="qty"
+            />
+            <input
+              type="submit"
+              value="taruh keranjang"
+              name="add_to_cart"
+              class="btn"
+            />
+          </form>
+        </div>
+
+        <div class="box">
+          <div class="price"><span>15</span>K</div>
+          <img src="images/mienyemek-manis.png" alt="" />
+          <div class="name">Mie nyemek manis</div>
+          <form action="" method="post">
+            <input
+              type="number"
+              min="1"
+              max="100"
+              value="1"
+              class="qty"
+              name="qty"
+            />
+            <input
+              type="submit"
+              value="taruh keranjang"
+              name="add_to_cart"
+              class="btn"
+            />
+          </form>
+        </div>
+
+        <div class="box">
+          <div class="price"><span>15</span>K</div>
+          <img src="images/mienyemek-pedas.png" alt="" />
+          <div class="name">Mie nyemek pedas</div>
+          <form action="" method="post">
+            <input
+              type="number"
+              min="1"
+              max="100"
+              value="1"
+              class="qty"
+              name="qty"
+            />
+            <input
+              type="submit"
+              value="taruh keranjang"
+              name="add_to_cart"
+              class="btn"
+            />
+          </form>
+        </div>
+
+        <div class="box">
+          <div class="price"><span>5</span>K</div>
+          <img src="images/teh.png" alt="" />
+          <div class="name">Teh es</div>
+          <form action="" method="post">
+            <input
+              type="number"
+              min="1"
+              max="100"
+              value="1"
+              class="qty"
+              name="qty"
+            />
+            <input
+              type="submit"
+              value="taruh keranjang"
+              name="add_to_cart"
+              class="btn"
+            />
+          </form>
+        </div>
+
+        <div class="box">
+          <div class="price"><span>5</span>K</div>
+          <img src="images/esmilo.png" alt="" />
+          <div class="name">Es milo</div>
+          <form action="" method="post">
+            <input
+              type="number"
+              min="1"
+              max="100"
+              value="1"
+              class="qty"
+              name="qty"
+            />
+            <input
+              type="submit"
+              value="taruh keranjang"
+              name="add_to_cart"
+              class="btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- menu section ends -->
+
+    <!-- order section starts  -->
+
+    <section class="order" id="order">
+      <h1 class="heading">pesan sekarang</h1>
+
+      <form action="" method="post">
+        <div class="display-orders">
+          <p>Mie goreng original <span>( 15K x 2 )</span></p>
+          <p>Mie kuah original <span>( 15K x 1 )</span></p>
+          <p>Teh es <span>( 5K x 2 )</span></p>
+        </div>
+
+        <div class="flex">
+          <div class="inputBox">
+            <span>nama anda :</span>
+            <input
+              type="text"
+              name="name"
+              class="box"
+              required
+              placeholder="masukkan nama anda"
+              maxlength="20"
+            />
+          </div>
+          <div class="inputBox">
+            <span>nomor anda :</span>
+            <input
+              type="number"
+              name="number"
+              class="box"
+              required
+              placeholder="masukkan nomor anda"
+              min="0"
+            />
+          </div>
+          <div class="inputBox">
+            <span>metode pembayaran</span>
+            <select name="method" class="box">
+              <option value="cash on delivery">cash on delivery</option>
+              <option value="credit card">credit card</option>
+              <option value="paypal">paypal</option>
+            </select>
+          </div>
+          <div class="inputBox">
+            <span>Alamat Rumah :</span>
+            <input
+              type="text"
+              name="flat"
+              class="box"
+              required
+              placeholder="masukkan alamat anda"
+              maxlength="50"
+            />
+          </div>
+          </div>
+        </div>
+
+        <input type="submit" value="pesan sekarang" class="btn" name="order" />
+      </form>
+    </section>
+
+    <!-- order section ends -->
+
+    <!-- faq section starts  -->
+
+    <section class="faq" id="faq">
+      <h1 class="heading">FAQ</h1>
+
+      <div class="accordion-container">
+        <div class="accordion active">
+          <div class="accordion-heading">
+            <span>Bagaimana cara memesan makanan?</span>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accrodion-content">
+            Untuk pemesanan makanan langsung saja klik "Taruh Keranjang" pada menu makanan yang ingin di pesan. Setelah itu klik ikon menu keranjang, pada menu keranjang silahkan klik "Pesan Sekarang". Setelah itu isi ketentuan yang tersedia, lalu klik "Order Now". Selanjutnya Lakukan pembayaran dengan memberikan uangnya di kasir.
+          </p>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-heading">
+            <span>Bagimana cara membuat akun?</span>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accrodion-content">
+            Klik ikon "Profil" di sebelah kiri atas. Setelah itu pada bagian kanan "Daftar Sekarang" silahkan masukkan nama, email, kata sandi, dan konfirmasi kata sandi pada masing masing menu baris yang tersedia sesuai ketentuannya.
+          </p>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-heading">
+            <span>Bagaimana caranya login dengan akun yang telah kita buat?</span>
+            <i class="fas fa-angle-down"></i>
+          </div>
+          <p class="accrodion-content">
+            Setelah selesai membuat akun silahkan masuk kembali ke menu Profil. Setelah itu pada bagian kiri "Masuk Sekarang" silahkan isi email dan password akun yang telah kita buat pada menu daftar akun.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- faq section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-phone"></i>
+          <h3>nomor telephone</h3>
+          <p>0895636854705</p>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-map-marker-alt"></i>
+          <h3>alamat kami</h3>
+          <p>
+            Jl.Handil Sulawesi, Gn.Tembak, RT.45, No.24, Kel.Teritip, Balikpapan
+            Timur
+          </p>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-clock"></i>
+          <h3>Jam Buka</h3>
+          <p>08:00 sampai 17:00</p>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-envelope"></i>
+          <h3>alamat email</h3>
+          <p>uwann1543@gmail.com</p>
+          <p>m.ridwan@students.
+            universitasmulia.ac.id</p>
+        </div>
+      </div>
+
+      <div class="credit">
+        &copy; copyright @ 2022 by <span>Muhammad Ridwan</span> | all rights
+        reserved!
+      </div>
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
